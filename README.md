@@ -1,7 +1,7 @@
 # Toufik Mechouma - PhD  in Cognitive Computing 
-Cloud MLOps| Fine-tune LLMs| Cloud Automation| Datascience| Vision & Language LLMs| Multimodal LLMs| NeuroSymbolic AI.
+Cloud MLOps | Fine-tune LLMs| Cloud Automation | Datascience | Vision & Language LLMs | Multimodal LLMs | NeuroSymbolic AI.
 
-I help companies elevate their business to the next level by harnessing the power of AI, enabling them to stay competitive and thrive in an increasingly data-driven world :grinning:
+**I help companies elevate their business to the next level by harnessing the power of AI, enabling them to stay competitive and thrive in an increasingly data-driven world** :grinning:
 
 ## About Me :
 <div align="justify">
@@ -17,23 +17,26 @@ An enthusiastic collaborator and lifelong learner, I thrive at the intersection 
 </div>
 
 ### Core Competencies
-- 	LLMs: BERT, GPT-3 and 4, T5, XLNet, RoBERTa, ALBERT, Electra, GPT-Neo, BioBERT, lingBERT, SCABERT, VLG-BERT.
-- 	NLP Data Processing: NLTK, spaCy, TextBlob, Gensim, OpenNLP
-- 	LLMs Modeling Techniques: Sequence-to-Sequence (Seq2Seq), Attention Mechanisms, Masked Language Models, Pre-trained Models, Transfer Learning, Meta-learning
-- 	Vector Databases: FAISS, Pinecone, Weaviate, Milvus
-- 	Retrieval-Augmented Generation (RAG) : LangChain, Semantic Kernel, Haystack, LiteLLM, LlamaIndex
-- 	MS Azure Machine Learning : ML Studio, ML Pipelines, ML SDK, Datasets & Data Stores, Model Deployment (ACI, AKS)
-- 	Azure Cognitive Services : Text Analytics API, Language Understanding (LUIS), Real-time text translation, QnA Maker, Computer Vision API, Anomaly Detector API
-- 	Applications: Text Generation, Named Entity Recognition (NER), Machine Translation, Sentiment Analysis, Question Answering, Summarization
-- 	Cloud & API Management : Azure (ML, Storage, API Management), GCP, FastAPI  
-- 	DevOps: GitHub, GitLab, Jenkins, GitHub Actions, GitLab CI/CD, Docker, Kubernetes
-- 	Machine Learning Libraries : Keras, Pytorch, Sklearn, TensorFlow, Hugging Face Transformers, AllenNLP
-- 	Optimization and Attention Mechanisms: Multi-Head Attention, Self-Attention, Transformers
-- 	Programming Languages: Python, Java
-- 	Data Handling: SQL, SQL Server, Oracle, NoSQL, MongoDB
+- 	**LLMs**: BERT, GPT-3, T5, XLNet, Gemini, LLaMA, RoBERTa, ALBERT, Electra, BioBERT, lingBERT, SCABERT, VLG-BERT.
+- 	**MULTIMODAL LLMs**: GPT 4 Turbo, DALL·E, Gemini 1.5, Claude 3, LLaVA 
+- 	**NLP Data Processing**: NLTK, spaCy, TextBlob, Gensim, OpenNLP, StanfordNLP
+- 	**LLMs Modeling Techniques**: Sequence-to-Sequence (Seq2Seq), Attention Mechanisms, Masked Language Models, Pre-trained Models, Transfer Learning, Meta-learning
+- 	**Vector Databases**: FAISS, Pinecone, Weaviate, Milvus
+- 	**Retrieval-Augmented Generation (RAG)**: LangChain, Semantic Kernel, Haystack, LiteLLM, LlamaIndex
+- 	**MS Azure Machine Learning**: ML Studio, ML Pipelines, ML SDK, Datasets & Data Stores, Model Deployment (ACI, AKS)
+- 	**Azure Cognitive Services**: Text Analytics API, Language Understanding (LUIS), Real-time text translation, QnA Maker, Computer Vision API, Anomaly Detector API
+- 	**Applications**: Text Generation, Named Entity Recognition (NER), Machine Translation, Sentiment Analysis, Question Answering, Summarization
+- 	**Cloud & API Management**: Azure (ML, Storage, API Management), GCP, FastAPI  
+- 	**DevOps**: GitHub, GitLab, Jenkins, GitHub Actions, GitLab CI/CD, Docker, Kubernetes
+- 	**Machine Learning Libraries**: Keras, Pytorch, Sklearn, TensorFlow, Hugging Face Transformers, AllenNLP
+- 	**Optimization and Attention Mechanisms**: Multi-Head Attention, Self-Attention, Transformers
+- 	**Programming Languages**: Python, Java
+- 	**Data Management**: SQL, SQL Server, Oracle, Oracle SQL Developper, NoSQL, MongoDB, Neo4j, Apache Spark.
 ## Additional Competencies
 - **Cloud Networking**: BRIDGE, IPVLAN, MACVLAN, OVERLAY on DOCKER, DOCKER SWARM and KUBERNETES Nodes Network Conception
-- **Networking**:
+- **Networking**: Advanced Level in Cisco Routing and Switching
+- **Security**: i am passionate about Kali linux, exploits and penetration testing
+- **Business Intelligence**: MS SSRS, SSIS, SSAS Dashboards to help on decision making
 - **Virtualization**: Vmware ESXI,vCenter, PROXMOX
 - **Agility**: SCRUM MASTER PSM I
 - **Machine Learning for cybersecurity**: Integration of ML algorithms for Cybersecurity and information systems security.
@@ -65,7 +68,7 @@ Linguistic Grounding](https://www.nlp4dh.com/nlp4dh-2025)**
    aligned with how humans understand and interpret the world. Experiments on text classification have shown excellent results compared to BERT Base.
    </div>
 
-3. **[Syntax-Constraint-Aware SCABERT: Syntactic Knowledge as a Ground Truth Supervisor of Attention Mechanism via Augmented Lagrange Multipliers](https://icict.co.uk/publication.php)** 
+2. **[Syntax-Constraint-Aware SCABERT: Syntactic Knowledge as a Ground Truth Supervisor of Attention Mechanism via Augmented Lagrange Multipliers](https://icict.co.uk/publication.php)** 
    Published in [**ICICT 2025** - **Springer**], Feb 19 2025, **London,UK**.
    <div align="justify">
    This paper introduces Syntax-Constraint-Aware BERT, a novel variant of BERT designed to inject syntactic knowledge into the attention mechanism using augmented Lagrange multipliers. The model employs syntactic 
@@ -76,23 +79,32 @@ Linguistic Grounding](https://www.nlp4dh.com/nlp4dh-2025)**
    classification as a downstream task. By combining the flexibility of deep learning with structured linguistic knowledge, we introduce a merge between bottom-up and top-down approaches. Furthermore, Syntax- 
    Constraint-Aware BERT enhances the interpretability and performance of Transformer-based models.
    </div>
-
+3. **[LingBERT, Linguistic Knowledge Injection into Attention Mechanism based on a Hybrid Masking Strategy](https://www.icmla-conference.org/icmla24/)** 
+   Published in [**ICMLA 2024** - **IEEE**], Dec 18 2024, **Miami,USA**.
+   <div align="justify">
+   In this paper, we propose lingBERT, a transformers based language model. We present two architectures of lingBERT based on hybrid masking strategy. Both models are inspired by BERT base. Our model introduces 
+   linguistic knowledge (syntactic dependencies ) injection into attention mechanisms. Models like BERT employ random masking of tokens during training, which can lead to inefficiencies in capturing syntactic 
+   and semantic dependencies. To address this, our method uses two masking strategies. The first one masks words with syntactic dependencies. The second one uses a low percentage of randomly masked words. 
+   Resulted tokens from both strategies are then handed over tow proposed architectures of lingBERT. This strategy ensures that linguistic relationships are preserved and learned more effectively. Additionally, 
+   we maintain a low  randomness ratio of masked tokens to avoid overfitting and enhance the model generalization. Through comprehensive experiments and evaluations, our approach demonstrates significant 
+   improvements in capturing context, leading to better performance across various NLP tasks. Furthermore, our approach affords an interpretability about our model inner workings throughout the learning process. 
+   This work offers a new direction toward knowledge injection into attention-mechanism based models, leading to advancing the capabilities of language understanding systems.
+   </div>
+4. **[Reinforcement of BERT with Dependency-Parsing based Attention Mask](https://iccci.pwr.edu.pl/2025/bibliometrics.php)** 
+   Published in [**ICCCI 2022** - **Springer**], Aug 28 2022, **Hammemet,TUNISIA**.
+   <div align="justify">
+   Dot-Product based attention mechanism is among recent attention mechanisms. It showed an outstanding performance with BERT. In this paper, we propose a dependency-parsing mask to reinforce the padding mask, 
+   at the multi-head attention units. Padding mask, is already used to filter padding positions. The proposed mask, aims to improve BERT attention filter. The conducted experiments, show that BERT performs 
+   better with the proposed mask.
+   </div>
 ---
 
-## Selected Projects
+## Labs Affiliation :
 
-### [Project Title 1](https://github.com/yourusername/project1)
-**Description**: Brief summary of the project. This project focuses on [objective], using [tools/techniques] to achieve [result/goal].  
-**Technologies**: Python, PyTorch, BERT, etc.  
-**Key Features**:  
-- Feature 1
-- Feature 2
-- Feature 3
+ - ### [Applied AI Lab LI2A](https://oraprdnt.uqtr.uquebec.ca/portail/gscw031?owa_no_site=6345&owa_no_fiche=3)
+ - ### [Cognitive Information Analysis Lab](https://www.lanci.uqam.ca/)
 
-**How to Use**:  
-```bash
-git clone https://github.com/yourusername/project1
-cd project1
-pip install -r requirements.txt
-python main.py
+## Conferences NLP Special Tracks Reviewer :
+-	IEEE  International Conference on Machine Learning and applications ICMLA (Special Track on NLP).
+-	Springer International Computational Collective Intelligence ICCCI (Special Track on NLP)
 
