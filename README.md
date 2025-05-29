@@ -40,8 +40,7 @@ An enthusiastic collaborator and lifelong learner, I thrive at the intersection 
 - **Virtualization**: Vmware ESXI,vCenter, PROXMOX
 - **Agility**: SCRUM MASTER PSM I
 - **Machine Learning for cybersecurity**: Integration of ML algorithms for Cybersecurity and information systems security.
-## GitHub Projects :
-- [**Image-captioning Web Application based on Microsoft GIT-BASE-COCO (GenerativeImage2Text) model**](https://github.com/tmechouma/image-captioning-app)
+
 
 ---
 ### Research Interests
