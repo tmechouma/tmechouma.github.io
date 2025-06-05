@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Toufik Mechouma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toufik Mechouma -<p class="email">📧 toufikmechouma at gmail dot com</p> </title>
   <style>
     /* Navigation Menu Styles */
     .navbar {
@@ -17,7 +18,7 @@
     }
     
     .nav-container {
-      max-width: 1200px;
+      max-width: 1450px;
       margin: 0 auto;
       display: flex;
       justify-content: center;
@@ -28,17 +29,18 @@
       list-style: none;
       margin: 0;
       padding: 0;
+      flex-wrap: wrap;
     }
     
     .nav-item {
-      margin: 0 12px;
+      margin: 0 15px;
     }
     
     .nav-link {
       color: white;
       text-decoration: none;
-      font-weight: 400;
-      padding: 8px 8 px;
+      font-weight: 500;
+      padding: 8px 15px;
       border-radius: 4px;
       transition: all 0.3s ease;
     }
@@ -61,9 +63,9 @@
     header {
       background-color: #F0F8FF;
       color: #ADD8E6;
-      padding: 20px 20px;
+      padding: 10px 10px;
       text-align: center;
-      margin-top: 20px; /* Add margin to account for fixed navbar */
+      margin-top: 0px; /* Add margin to account for fixed navbar */
     }
 
     header h1 {
@@ -73,15 +75,15 @@
 
     header p {
       font-size: 1.1rem;
-      margin-top: 10px;
+      margin-top: 0 px;
       color: #C0C0C0;
     }
 
     .container {
       max-width: 1000px;
       margin-top:0px;
-      margin: 30px auto;
-      padding: 20px;
+      margin: 10px auto;
+      padding: 10px;
       background: GhostWhite;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -130,9 +132,10 @@
 
     blockquote {
       background: #e0f2fe;
-      border-left: 4px solid #0284c7;
+      border-left: 20px solid #0284c7;
+	  border-right: 20px solid #0284c7;
       padding: 5px 15px;
-      margin: 1px 0;
+      margin: 20px 100px;
       border-radius: 6px;
       color: #0c4a6e;
     }
@@ -157,6 +160,92 @@
       margin-top: 15px;
       margin-bottom: 5px;
     }
+
+    /* Tooltip styles */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 700px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      font-size: 0.7rem;
+      line-height: 1.2;
+    }
+    
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+    
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    /* Style for the skills in header */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 20px;
+      margin-top: 10px;
+    }
+    
+    .skill-item {
+      position: relative;
+      cursor: default;
+      white-space: nowrap;
+    }
+    
+    .skill-item:hover {
+      color: #3b82f6;
+    }
+
+    .skill-separator {
+      color: #C0C0C0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .nav-item {
+        margin: 5px 0;
+      }
+      
+      .skills-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+      
+      .skill-separator {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -179,11 +268,39 @@
 
   <header>
     <h1>Toufik Mechouma - PhD in Cognitive Computing</h1>
-    <p>Cloud MLOps | Fine-tune LLMs | Cloud Automation | Datascience | Vision & Language LLMs | Multimodal LLMs | NeuroSymbolic AI</p>
-      <blockquote>
-        I help companies elevate their business to the next level by harnessing the power of AI,
-        enabling them to stay competitive and thrive in an increasingly data-driven world. 😄
-      </blockquote>
+    <div class="skills-list">
+      <div class="tooltip skill-item">Cloud MLOps
+        <span class="tooltiptext">Designing and implementing machine learning workflows in cloud environments with CI/CD pipelines.</span>
+      </div>
+      <span class="skill-separator">|</span>
+      <div class="tooltip skill-item">Fine-tune LLMs
+        <span class="tooltiptext">Adapting pre-trained large language models to specific domains or tasks using techniques like prompt engineering, LoRA, and full fine-tuning.</span>
+      </div>
+      <span class="skill-separator">|</span>
+      <div class="tooltip skill-item">Cloud Automation
+        <span class="tooltiptext">Implementing infrastructure as code (IaC) and automated deployment pipelines for cloud-native AI solutions.</span>
+      </div>
+      <span class="skill-separator">|</span>
+      <div class="tooltip skill-item">Datascience
+        <span class="tooltiptext">Extracting insights from complex datasets using statistical analysis, machine learning, and data visualization techniques.</span>
+      </div>
+      <span class="skill-separator">|</span>
+      <div class="tooltip skill-item">Vision & Language LLMs
+        <span class="tooltiptext">Developing multimodal models that combine computer vision and natural language processing capabilities.</span>
+      </div>
+      <span class="skill-separator">|</span>
+      <div class="tooltip skill-item">Multimodal LLMs
+        <span class="tooltiptext">Building AI systems that can process and understand multiple data modalities (text, images, audio) simultaneously.</span>
+      </div>
+      <span class="skill-separator">|</span>
+      <div class="tooltip skill-item">NeuroSymbolic AI
+        <span class="tooltiptext">Combining neural networks with symbolic reasoning for more interpretable and robust AI systems.</span>
+      </div>
+    </div>
+    <blockquote>
+      I help companies elevate their business to the next level by harnessing the power of AI,
+      enabling them to stay competitive and thrive in an increasingly data-driven world. 😄
+    </blockquote>
   </header>
 
   <div class="container">
@@ -264,7 +381,7 @@
       <h2>Research Papers & Publications</h2>
       <ul>
         <li><strong>VLG-BERT</strong>: Towards Better Interpretability in LLMs through Visual and Linguistic Grounding – <a href="https://aclanthology.org/2025.nlp4dh-1.47/" target="_blank">NLP4DH 2025 - NAACL 2025</a></li>
-        <p><div align="justify">In this paper we present VLG-BERT, a novel LLM model conceived to improve language meaning encoding. VLG-BERT provides deeper insights about meaning encoding in Large Language Models (LLMs) by focusing on linguistic and real-world semantics. It uses syntactic dependencies as a form of ground truth to supervise the learning process of word representations. VLG-BERT incorporates visual latent representations from pre-trained vision models and their corresponding labels. A vocabulary of 10k tokens corresponding to so-called concrete words is built by extending the set of ImageNet labels. The extension is based on synonyms, hyponyms, and hypernyms from WordNet. A lookup table for this vocabulary is then used to initialize the embedding matrix during training, rather than random initialization. This multimodal grounding provides a stronger semantic foundation for encoding the meaning of words. Its architecture aligns seamlessly with foundational theories from across the cognitive sciences. The integration of visual and linguistic grounding makes VLG-BERT consistent with many cognitive theories. Our approach contributes to the ongoing effort to create models that bridge the gap between language and vision, making them more aligned with how humans understand and interpret the world. Experiments on text classification have shown excellent results compared to BERT Base. </div></p>
+        <p><div align="justify">This paper explores We present VLG-BERT, a novel LLM model conceived to improve language meaning encoding. VLG-BERT provides deeper insights about meaning encoding in Large Language Models (LLMs) by focusing on linguistic and real-world semantics. It uses syntactic dependencies as a form of ground truth to supervise the learning process of word representations. VLG-BERT incorporates visual latent representations from pre-trained vision models and their corresponding labels. A vocabulary of 10k tokens corresponding to so-called concrete words is built by extending the set of ImageNet labels. The extension is based on synonyms, hyponyms, and hypernyms from WordNet. A lookup table for this vocabulary is then used to initialize the embedding matrix during training, rather than random initialization. This multimodal grounding provides a stronger semantic foundation for encoding the meaning of words. Its architecture aligns seamlessly with foundational theories from across the cognitive sciences. The integration of visual and linguistic grounding makes VLG-BERT consistent with many cognitive theories. Our approach contributes to the ongoing effort to create models that bridge the gap between language and vision, making them more aligned with how humans understand and interpret the world. Experiments on text classification have shown excellent results compared to BERT Base. </div></p>
     <li><strong>SCABERT</strong>: Syntactic Knowledge as a Ground Truth Supervisor via Augmented Lagrange Multipliers – <em>ICICT 2025</em></li>
         <p><div align="justify">This paper introduces Syntax-Constraint-Aware BERT, a novel variant of BERT designed to inject syntactic knowledge into the attention mechanism using augmented Lagrange multipliers. The model employs syntactic dependencies as a form of ground truth to supervise the learning process of word representation, thereby ensuring that syntactic structure exerts an influence on the model's word representations. The application of augmented Lagrangian optimisation enables the imposition of constraints on the attention mechanism, thereby facilitating the learning of syntactic relationships. This approach involves the augmentation of the standard BERT architecture through the modification of the prediction layer. The objective is to predict an adjacency matrix that encodes words' syntactic relationships in place of the masked tokens. The results of our experiments demonstrate that the injection of syntactic knowledge leads to improved performance in comparison to BERT in terms of training time and also on AG News text classification as a downstream task. By combining the flexibility of deep learning with structured linguistic knowledge, we introduce a merge between bottom-up and top-down approaches. Furthermore, Syntax- Constraint-Aware BERT enhances the interpretability and performance of Transformer-based models. </div></p>
     <li><strong>lingBERT</strong>:LingBERT, Linguistic Knowledge Injection into Attention Mechanism Based on a Hybrid Masking Strategy <a href="https://www.proceedings.com/content/078/078866webtoc.pdf" target="_blank">ICMLA 2024</a></li>      
