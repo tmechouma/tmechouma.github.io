@@ -2,240 +2,295 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Toufik Mechouma -<p class="email">📧 toufikmechouma at gmail dot com</p> </title>
-  
-  <!-- Add the CSS from above here -->
+  <title>Toufik Mechouma</title>
+  <style>
+    /* Navigation Menu Styles */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #1e293b;
+      padding: 15px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav-item {
+      margin: 0 12px;
+    }
+    
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-weight: 400;
+      padding: 8px 8 px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      background-color: #3b82f6;
+      text-decoration: none;
+    }
+    
+    /* Add padding to body to account for fixed navbar */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fa;
+      color: #333;
+      line-height: 1.7;
+      padding-top: 70px; /* Adjust based on navbar height */
+    }
+
+    header {
+      background-color: #F0F8FF;
+      color: #ADD8E6;
+      padding: 20px 20px;
+      text-align: center;
+      margin-top: 20px; /* Add margin to account for fixed navbar */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.0rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #C0C0C0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin-top:0px;
+      margin: 30px auto;
+      padding: 20px;
+      background: GhostWhite;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    section {
+      margin-bottom: 40px;
+      scroll-margin-top: 80px; /* Helps with anchor links accounting for fixed header */
+    }
+
+    h2 {
+      color: 	#708090;
+      border-left: 5px solid #3b82f6;
+      padding-left: 10px;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #C0C0C0;
+    }
+
+    code {
+      background: #C0C0C0;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    blockquote {
+      background: #e0f2fe;
+      border-left: 4px solid #0284c7;
+      padding: 5px 15px;
+      margin: 1px 0;
+      border-radius: 6px;
+      color: #0c4a6e;
+    }
+
+    .emoji {
+      font-size: 1.4rem;
+    }
+
+    a {
+      color: #C0C0C0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .subsection-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #334155;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
-<style>
-  body {
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #f4f7fa;
-    color: #333;
-    line-height: 1.7;
-  }
-
-  header {
-    background-color: #F0F8FF;
-    color: #ADD8E6;
-    padding: 20px 20px;
-    text-align: center;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 2.0rem;
-  }
-
-  header p {
-    font-size: 1.1rem;
-    margin-top: 10px;
-    color: #C0C0C0;
-  }
-
-  .container {
-    max-width: 1000px;
-	margin-top:0px;
-    margin: 30px auto;
-    padding: 20px;
-    background: GhostWhite;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  }
-
-  section {
-    margin-bottom: 40px;
-  }
-
-  h2 {
-    color: 	#708090;
-    border-left: 5px solid #3b82f6;
-    padding-left: 10px;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-
-  ul {
-    padding-left: 20px;
-  }
-
-  li {
-    margin-bottom: 8px;
-  }
-
-  .highlight {
-    font-weight: bold;
-    color: #C0C0C0;
-  }
-
-  code {
-    background: #C0C0C0;
-    padding: 2px 6px;
-    border-radius: 6px;
-    font-size: 0.95rem;
-  }
-
-  footer {
-    text-align: center;
-    padding: 20px;
-    background: #1e293b;
-    color: white;
-    font-size: 0.9rem;
-  }
-
-  blockquote {
-    background: #e0f2fe;
-    border-left: 4px solid #0284c7;
-    padding: 5px 15px;
-    margin: 1px 0;
-    border-radius: 6px;
-    color: #0c4a6e;
-  }
-
-  .emoji {
-    font-size: 1.4rem;
-  }
-
-  a {
-    color: #C0C0C0;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  .subsection-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #334155;
-    margin-top: 15px;
-    margin-bottom: 5px;
-  }
-</style>
 <body>
+
+  <!-- Navigation Menu -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#core" class="nav-link">Core Competencies</a></li>
+        <li class="nav-item"><a href="#additional" class="nav-link">Additional Competencies</a></li>
+        <li class="nav-item"><a href="#github" class="nav-link">GitHub Projects</a></li>
+        <li class="nav-item"><a href="#research" class="nav-link">Research Interests</a></li>
+        <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+        <li class="nav-item"><a href="#labs" class="nav-link">Labs Affiliation</a></li>
+        <li class="nav-item"><a href="#reviewer" class="nav-link">Reviewer Roles</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <header>
     <h1>Toufik Mechouma - PhD in Cognitive Computing</h1>
     <p>Cloud MLOps | Fine-tune LLMs | Cloud Automation | Datascience | Vision & Language LLMs | Multimodal LLMs | NeuroSymbolic AI</p>
-  	  <blockquote>
+      <blockquote>
         I help companies elevate their business to the next level by harnessing the power of AI,
         enabling them to stay competitive and thrive in an increasingly data-driven world. 😄
       </blockquote>
-	 
   </header>
 
   <div class="container">
-    <section>
-
-	  
+    <section id="about">
       <h2>About Me</h2>
       <p>
-	  <div align="justify">
+      <div align="justify">
        A highly skilled NLP expert and passionate AI researcher, driven by a mission to design and develop state-of-the-art multimodal large language models (LLMs) that transcend symbolic surface forms to semotize concepts—capturing meaning through grounded, perceptual representations. My research vision lies in bridging the gap between linguistic symbols and real-world semantics by fusing vision and language at the conceptual level, creating truly intelligent systems that understand, reason, and interact like humans.
-	   <br><br>
-       I integrate cutting-edge technologies including Transformers, LLMs variants, and powerful toolkits like <strong>LangChain, Semantic Kernel, Haystack, LiteLLM, and LlamaIndex </strong> to build retrieval-augmented generation <strong>(RAG)</strong> systems and intelligent agents capable of real-world problem solving. My multimodal pipeline involves <strong>CLIP, BLIP-2, Kosmos-2, and Flamingo </strong>, tightly woven with language processing layers to enable deep contextual understanding across text, image, and video modalities.
-	   <br><br>
-	   With hands-on expertise in vector databases <strong>(FAISS, Pinecone, Weaviate, Milvus)</strong>, I implement semantic indexing and grounded concept linking using external knowledge bases and latent spaces derived from vision models—an approach that redefines the nature of understanding and inference in AI.
        <br><br>
-	   Proficient in Python, <strong> Neo4j, Mongodb, apache Spark, SQL, NoSQL </strong> and modern DevOps/MLOps practices <strong>(Docker, GitHub Actions, MLflow, Terraform, Kubernetes)</strong>, I deploy scalable, production-ready AI services in Azure, GCP, and AWS cloud ecosystems. My architecture philosophy embraces CI/CD, data-centric AI, and research-to-deployment alignment, ensuring that cutting-edge insights seamlessly translate into enterprise-grade solutions.
-       An enthusiastic collaborator and lifelong learner, I thrive at the intersection of research and application, constantly pushing the frontiers of multimodal cognition, grounded meaning, and neurosymbolic AI. I’m on a mission to contribute to the next generation of LLMs that can see, reason, and communicate with conceptual depth—not just linguistic fluency.<span class="emoji">🧠</span>
+       I integrate cutting-edge technologies including Transformers, LLMs variants, and powerful toolkits like <strong>LangChain, Semantic Kernel, Haystack, LiteLLM, and LlamaIndex </strong> to build retrieval-augmented generation <strong>(RAG)</strong> systems and intelligent agents capable of real-world problem solving. My multimodal pipeline involves <strong>CLIP, BLIP-2, Kosmos-2, and Flamingo </strong>, tightly woven with language processing layers to enable deep contextual understanding across text, image, and video modalities.
+       <br><br>
+       With hands-on expertise in vector databases <strong>(FAISS, Pinecone, Weaviate, Milvus)</strong>, I implement semantic indexing and grounded concept linking using external knowledge bases and latent spaces derived from vision models—an approach that redefines the nature of understanding and inference in AI.
+       <br><br>
+       Proficient in Python, <strong> Neo4j, Mongodb, apache Spark, SQL, NoSQL </strong> and modern DevOps/MLOps practices <strong>(Docker, GitHub Actions, MLflow, Terraform, Kubernetes)</strong>, I deploy scalable, production-ready AI services in Azure, GCP, and AWS cloud ecosystems. My architecture philosophy embraces CI/CD, data-centric AI, and research-to-deployment alignment, ensuring that cutting-edge insights seamlessly translate into enterprise-grade solutions.
+       An enthusiastic collaborator and lifelong learner, I thrive at the intersection of research and application, constantly pushing the frontiers of multimodal cognition, grounded meaning, and neurosymbolic AI. I'm on a mission to contribute to the next generation of LLMs that can see, reason, and communicate with conceptual depth—not just linguistic fluency.<span class="emoji">🧠</span>
       </div>
-	  </p>
-
+      </p>
     </section>
 
-    <section>
+    <section id="core">
       <h2>Core Competencies</h2>
-	<ul>
-	  <li><strong>LLMs:</strong> BERT, GPT-3, T5, XLNet, Gemini, LLaMA, RoBERTa, ALBERT, Electra, BioBERT, lingBERT, SCABERT, VLG-BERT.</li>
-	  <li><strong>MULTIMODAL LLMs:</strong> GPT 4 Turbo, DALL·E, Gemini 1.5, Claude 3, LLaVA</li>
-	  <li><strong>NLP Data Processing:</strong> NLTK, spaCy, TextBlob, Gensim, OpenNLP, StanfordNLP</li>
-	  <li><strong>LLMs Modeling Techniques:</strong> Sequence-to-Sequence (Seq2Seq), Attention Mechanisms, Masked Language Models, Pre-trained Models, Transfer Learning, Meta-learning</li>
-	  <li><strong>Vector Databases:</strong> FAISS, Pinecone, Weaviate, Milvus</li>
-	  <li><strong>Retrieval-Augmented Generation (RAG):</strong> LangChain, Semantic Kernel, Haystack, LiteLLM, LlamaIndex</li>
-	  <li><strong>MS Azure Machine Learning:</strong> ML Studio, ML Pipelines, ML SDK, Datasets & Data Stores, Model Deployment (ACI, AKS)</li>
-	  <li><strong>Azure Cognitive Services:</strong> Text Analytics API, Language Understanding (LUIS), Real-time text translation, QnA Maker, Computer Vision API, Anomaly Detector API</li>
-	  <li><strong>Applications:</strong> Text Generation, Named Entity Recognition (NER), Machine Translation, Sentiment Analysis, Question Answering, Summarization</li>
-	  <li><strong>Cloud & API Management:</strong> Azure (ML, Storage, API Management), GCP, FastAPI</li>
-	  <li><strong>DevOps:</strong> GitHub, GitLab, Jenkins, GitHub Actions, GitLab CI/CD, Docker, Kubernetes</li>
-	  <li><strong>Machine Learning Libraries:</strong> Keras, Pytorch, Sklearn, TensorFlow, Hugging Face Transformers, AllenNLP</li>
-	  <li><strong>Optimization and Attention Mechanisms:</strong> Multi-Head Attention, Self-Attention, Transformers</li>
-	  <li><strong>Programming Languages:</strong> Python, Java</li>
-	  <li><strong>Data Management:</strong> SQL, SQL Server, Oracle, Oracle SQL Developer, NoSQL, MongoDB, Neo4j, Apache Spark</li>
-	</ul>
-
+    <ul>
+      <li><strong>LLMs:</strong> BERT, GPT-3, T5, XLNet, Gemini, LLaMA, RoBERTa, ALBERT, Electra, BioBERT, lingBERT, SCABERT, VLG-BERT.</li>
+      <li><strong>MULTIMODAL LLMs:</strong> GPT 4 Turbo, DALL·E, Gemini 1.5, Claude 3, LLaVA</li>
+      <li><strong>NLP Data Processing:</strong> NLTK, spaCy, TextBlob, Gensim, OpenNLP, StanfordNLP</li>
+      <li><strong>LLMs Modeling Techniques:</strong> Sequence-to-Sequence (Seq2Seq), Attention Mechanisms, Masked Language Models, Pre-trained Models, Transfer Learning, Meta-learning</li>
+      <li><strong>Vector Databases:</strong> FAISS, Pinecone, Weaviate, Milvus</li>
+      <li><strong>Retrieval-Augmented Generation (RAG):</strong> LangChain, Semantic Kernel, Haystack, LiteLLM, LlamaIndex</li>
+      <li><strong>MS Azure Machine Learning:</strong> ML Studio, ML Pipelines, ML SDK, Datasets & Data Stores, Model Deployment (ACI, AKS)</li>
+      <li><strong>Azure Cognitive Services:</strong> Text Analytics API, Language Understanding (LUIS), Real-time text translation, QnA Maker, Computer Vision API, Anomaly Detector API</li>
+      <li><strong>Applications:</strong> Text Generation, Named Entity Recognition (NER), Machine Translation, Sentiment Analysis, Question Answering, Summarization</li>
+      <li><strong>Cloud & API Management:</strong> Azure (ML, Storage, API Management), GCP, FastAPI</li>
+      <li><strong>DevOps:</strong> GitHub, GitLab, Jenkins, GitHub Actions, GitLab CI/CD, Docker, Kubernetes</li>
+      <li><strong>Machine Learning Libraries:</strong> Keras, Pytorch, Sklearn, TensorFlow, Hugging Face Transformers, AllenNLP</li>
+      <li><strong>Optimization and Attention Mechanisms:</strong> Multi-Head Attention, Self-Attention, Transformers</li>
+      <li><strong>Programming Languages:</strong> Python, Java</li>
+      <li><strong>Data Management:</strong> SQL, SQL Server, Oracle, Oracle SQL Developer, NoSQL, MongoDB, Neo4j, Apache Spark</li>
+    </ul>
     </section>
-	
-    <section>
+    
+    <section id="additional">
       <h2>Additional Competencies</h2>
-	<ul>
-	  <li><strong>Cloud Networking:</strong> BRIDGE, IPVLAN, MACVLAN, OVERLAY on DOCKER, DOCKER SWARM and KUBERNETES Nodes Network Conception</li>
-	  <li><strong>Networking:</strong> Advanced Level in Cisco Routing and Switching</li>
-	  <li><strong>Security:</strong> I am passionate about Kali Linux, exploits and penetration testing</li>
-	  <li><strong>Business Intelligence:</strong> MS SSRS, SSIS, SSAS Dashboards to help on decision making</li>
-	  <li><strong>Virtualization:</strong> VMware ESXi, vCenter, PROXMOX</li>
-	  <li><strong>Agility:</strong> SCRUM MASTER PSM I</li>
-	  <li><strong>Machine Learning for Cybersecurity:</strong> Integration of ML algorithms for Cybersecurity and Information Systems Security</li>
-	</ul>
+    <ul>
+      <li><strong>Cloud Networking:</strong> BRIDGE, IPVLAN, MACVLAN, OVERLAY on DOCKER, DOCKER SWARM and KUBERNETES Nodes Network Conception</li>
+      <li><strong>Networking:</strong> Advanced Level in Cisco Routing and Switching</li>
+      <li><strong>Security:</strong> I am passionate about Kali Linux, exploits and penetration testing</li>
+      <li><strong>Business Intelligence:</strong> MS SSRS, SSIS, SSAS Dashboards to help on decision making</li>
+      <li><strong>Virtualization:</strong> VMware ESXi, vCenter, PROXMOX</li>
+      <li><strong>Agility:</strong> SCRUM MASTER PSM I</li>
+      <li><strong>Machine Learning for Cybersecurity:</strong> Integration of ML algorithms for Cybersecurity and Information Systems Security</li>
+    </ul>
     </section>
-	  
-    <section>
+      
+    <section id="github">
       <h2> GitHub Projects</h2>
-	<ul>
-	  <li><strong>Image-captioning </strong> Web Application based on Microsoft GIT-BASE-COCO (GenerativeImage2Text) model<a href="https://github.com/tmechouma/image-captioning-app" target="_blank">  git_link</a> </li>
-	  <li><strong>A privacy-focused RAG </strong> Web Application that answers questions about your documents - 100% offline using langChain, FAISS, Zephyr-7B and FAISS*</strong><a href="https://github.com/tmechouma/rag-langchain-app" target="_blank">   git_link</a></li>
-	</ul>
+    <ul>
+      <li><strong>Image-captioning </strong> Web Application based on Microsoft GIT-BASE-COCO (GenerativeImage2Text) model<a href="https://github.com/tmechouma/image-captioning-app" target="_blank">  git_link</a> </li>
+      <li><strong>A privacy-focused RAG </strong> Web Application that answers questions about your documents - 100% offline using langChain, FAISS, Zephyr-7B and FAISS*</strong><a href="https://github.com/tmechouma/rag-langchain-app" target="_blank">   git_link</a></li>
+    </ul>
     </section> 
-	  
-    <section>
+      
+    <section id="research">
       <h2>Research Interests</h2>
-	<ul>
-	  <li><strong>Natural Language Processing (NLP):</strong> Developing advanced methods for deeper encoding of word and sentence meanings to enhance understanding and interpretation.</li>
-	  <li><strong>Multimodal Learning:</strong> Combining vision, language, and other sensory inputs to build a holistic AI.</li>
-	  <li><strong>Cognitive Computing (Perception):</strong> Leveraging deep neural networks as perception modules for interpreting multimodal inputs.</li>
-	  <li><strong>Cognitive Computing (Memory):</strong> Modeling semantic and episodic memory as a complementary component to Retrieval-Augmented Generation (RAG) in multimodal large language models (LLMs).</li>
-	  <li><strong>Cognitive Computing (Representation):</strong> Toward the generation of neural ontologies for enriched knowledge representation.</li>
-	  <li><strong>Cognitive Computing (Reasoning):</strong> Toward abstracting neural ontology-based knowledge representations into formal concepts to enable logical reasoning.</li>
-	  <li><strong>AI Topdown and Bottomup AI approaches:</strong> Merging top-down and bottom-up AI approaches to achieve enhanced interpretability and deeper insights.</li>
-	  <li><strong>Causal Inference & Causality:</strong> Applying causal inference techniques to real-world industrial challenges, such as failure detection and root cause analysis.</li>
-	</ul>
-
+    <ul>
+      <li><strong>Natural Language Processing (NLP):</strong> Developing advanced methods for deeper encoding of word and sentence meanings to enhance understanding and interpretation.</li>
+      <li><strong>Multimodal Learning:</strong> Combining vision, language, and other sensory inputs to build a holistic AI.</li>
+      <li><strong>Cognitive Computing (Perception):</strong> Leveraging deep neural networks as perception modules for interpreting multimodal inputs.</li>
+      <li><strong>Cognitive Computing (Memory):</strong> Modeling semantic and episodic memory as a complementary component to Retrieval-Augmented Generation (RAG) in multimodal large language models (LLMs).</li>
+      <li><strong>Cognitive Computing (Representation):</strong> Toward the generation of neural ontologies for enriched knowledge representation.</li>
+      <li><strong>Cognitive Computing (Reasoning):</strong> Toward abstracting neural ontology-based knowledge representations into formal concepts to enable logical reasoning.</li>
+      <li><strong>AI Topdown and Bottomup AI approaches:</strong> Merging top-down and bottom-up AI approaches to achieve enhanced interpretability and deeper insights.</li>
+      <li><strong>Causal Inference & Causality:</strong> Applying causal inference techniques to real-world industrial challenges, such as failure detection and root cause analysis.</li>
+    </ul>
     </section>
-	
+    
 
-    <section>
+    <section id="publications">
       <h2>Research Papers & Publications</h2>
       <ul>
         <li><strong>VLG-BERT</strong>: Towards Better Interpretability in LLMs through Visual and Linguistic Grounding – <a href="https://aclanthology.org/2025.nlp4dh-1.47/" target="_blank">NLP4DH 2025 - NAACL 2025</a></li>
         <p><div align="justify">This paper explores We present VLG-BERT, a novel LLM model conceived to improve language meaning encoding. VLG-BERT provides deeper insights about meaning encoding in Large Language Models (LLMs) by focusing on linguistic and real-world semantics. It uses syntactic dependencies as a form of ground truth to supervise the learning process of word representations. VLG-BERT incorporates visual latent representations from pre-trained vision models and their corresponding labels. A vocabulary of 10k tokens corresponding to so-called concrete words is built by extending the set of ImageNet labels. The extension is based on synonyms, hyponyms, and hypernyms from WordNet. A lookup table for this vocabulary is then used to initialize the embedding matrix during training, rather than random initialization. This multimodal grounding provides a stronger semantic foundation for encoding the meaning of words. Its architecture aligns seamlessly with foundational theories from across the cognitive sciences. The integration of visual and linguistic grounding makes VLG-BERT consistent with many cognitive theories. Our approach contributes to the ongoing effort to create models that bridge the gap between language and vision, making them more aligned with how humans understand and interpret the world. Experiments on text classification have shown excellent results compared to BERT Base. </div></p>
-	<li><strong>SCABERT</strong>: Syntactic Knowledge as a Ground Truth Supervisor via Augmented Lagrange Multipliers – <em>ICICT 2025</em></li>
+    <li><strong>SCABERT</strong>: Syntactic Knowledge as a Ground Truth Supervisor via Augmented Lagrange Multipliers – <em>ICICT 2025</em></li>
         <p><div align="justify">This paper introduces Syntax-Constraint-Aware BERT, a novel variant of BERT designed to inject syntactic knowledge into the attention mechanism using augmented Lagrange multipliers. The model employs syntactic dependencies as a form of ground truth to supervise the learning process of word representation, thereby ensuring that syntactic structure exerts an influence on the model's word representations. The application of augmented Lagrangian optimisation enables the imposition of constraints on the attention mechanism, thereby facilitating the learning of syntactic relationships. This approach involves the augmentation of the standard BERT architecture through the modification of the prediction layer. The objective is to predict an adjacency matrix that encodes words' syntactic relationships in place of the masked tokens. The results of our experiments demonstrate that the injection of syntactic knowledge leads to improved performance in comparison to BERT in terms of training time and also on AG News text classification as a downstream task. By combining the flexibility of deep learning with structured linguistic knowledge, we introduce a merge between bottom-up and top-down approaches. Furthermore, Syntax- Constraint-Aware BERT enhances the interpretability and performance of Transformer-based models. </div></p>
-	<li><strong>lingBERT</strong>:LingBERT, Linguistic Knowledge Injection into Attention Mechanism Based on a Hybrid Masking Strategy <a href="https://www.proceedings.com/content/078/078866webtoc.pdf" target="_blank">ICMLA 2024</a></li>      
-	<p><div align="justify">In this paper, we propose lingBERT, a transformers based language model. We present two architectures of lingBERT based on hybrid masking strategy. Both models are inspired by BERT base. Our model introduces linguistic knowledge (syntactic dependencies ) injection into attention mechanisms. Models like BERT employ random masking of tokens during training, which can lead to inefficiencies in capturing syntactic and semantic dependencies. To address this, our method uses two masking strategies. The first one masks words with syntactic dependencies. The second one uses a low percentage of randomly masked words. Resulted tokens from both strategies are then handed over tow proposed architectures of lingBERT. This strategy ensures that linguistic relationships are preserved and learned more effectively. Additionally, we maintain a low randomness ratio of masked tokens to avoid overfitting and enhance the model generalization. Through comprehensive experiments and evaluations, our approach demonstrates significant improvements in capturing context, leading to better performance across various NLP tasks. Furthermore, our approach affords an interpretability about our model inner workings throughout the learning process. This work offers a new direction toward knowledge injection into attention-mechanism based models, leading to advancing the capabilities of language understanding systems. </div></p>	
+    <li><strong>lingBERT</strong>:LingBERT, Linguistic Knowledge Injection into Attention Mechanism Based on a Hybrid Masking Strategy <a href="https://www.proceedings.com/content/078/078866webtoc.pdf" target="_blank">ICMLA 2024</a></li>      
+    <p><div align="justify">In this paper, we propose lingBERT, a transformers based language model. We present two architectures of lingBERT based on hybrid masking strategy. Both models are inspired by BERT base. Our model introduces linguistic knowledge (syntactic dependencies ) injection into attention mechanisms. Models like BERT employ random masking of tokens during training, which can lead to inefficiencies in capturing syntactic and semantic dependencies. To address this, our method uses two masking strategies. The first one masks words with syntactic dependencies. The second one uses a low percentage of randomly masked words. Resulted tokens from both strategies are then handed over tow proposed architectures of lingBERT. This strategy ensures that linguistic relationships are preserved and learned more effectively. Additionally, we maintain a low randomness ratio of masked tokens to avoid overfitting and enhance the model generalization. Through comprehensive experiments and evaluations, our approach demonstrates significant improvements in capturing context, leading to better performance across various NLP tasks. Furthermore, our approach affords an interpretability about our model inner workings throughout the learning process. This work offers a new direction toward knowledge injection into attention-mechanism based models, leading to advancing the capabilities of language understanding systems. </div></p>    
         <li><strong>Reinforcement of BERT with Dependency-Parsing Based Attention Mask</strong> <a href="https://link.springer.com/book/10.1007/978-3-031-16210-7" target="_blank">ICCCI 2022</a></li>
-		<p><div align="justify">Dot-Product based attention mechanism is among recent attention mechanisms. It showed an outstanding performance with BERT. In this paper, we propose a dependency-parsing mask to reinforce the padding mask, at the multi-head attention units. Padding mask, is already used to filter padding positions. The proposed mask, aims to improve BERT attention filter. The conducted experiments, show that BERT performs better with the proposed mask.</div></p>
-		
+        <p><div align="justify">Dot-Product based attention mechanism is among recent attention mechanisms. It showed an outstanding performance with BERT. In this paper, we propose a dependency-parsing mask to reinforce the padding mask, at the multi-head attention units. Padding mask, is already used to filter padding positions. The proposed mask, aims to improve BERT attention filter. The conducted experiments, show that BERT performs better with the proposed mask.</div></p>
+        
       </ul>
     </section>
 
-    <section>
+    <section id="labs">
       <h2>Labs Affiliation</h2>
-	  <ul>
-	  <li><strong>Applied AI Lab LI2A <a href="https://oraprdnt.uqtr.uquebec.ca/portail/gscw031?owa_no_site=6345&owa_no_fiche=3" target="_blank">LI2A-UQTR</a></strong></li>
-	  <li><strong>Cognitive Information Analysis Lab LANCI <a href="https://www.tonsite.com" target="_blank">LANCI-UQAM</a></strong></li>
-	  </ul>
-     
+      <ul>
+      <li><strong>Applied AI Lab LI2A <a href="https://oraprdnt.uqtr.uquebec.ca/portail/gscw031?owa_no_site=6345&owa_no_fiche=3" target="_blank">LI2A-UQTR</a></strong></li>
+      <li><strong>Cognitive Information Analysis Lab LANCI <a href="https://www.tonsite.com" target="_blank">LANCI-UQAM</a></strong></li>
+      </ul>
     </section>
 
-    <section>
-	<h2>Reviewer Roles</h2>
-	<ul>
-	  <li><strong>IEEE International Conference on Machine Learning and Application</strong><a href="https://www.icmla-conference.org/" target="_blank"> ICMLA</a></li>
-	  <li><strong>Springer International Conference on Computational Collective Intelligence, (NLP Track)</strong><a href="https://iccci.pwr.edu.pl/" target="_blank"> ICCCI </a></li>
-	  <li><strong>Florida Online Journal Flairs-38 (special track: semantic, logics, information extraction and ai)</strong><a href="https://journals.flvc.org/FLAIRS/index" target="_blank"> Flairs</a></li>
-	  <li><strong>Program Committee - Florida Online Journal Flairs-36 (special track: semantic, logics, information extraction and ai)</strong><a href="https://journals.flvc.org/FLAIRS/article/download/133389/137469" target="_blank"> Flairs-36</a> </li>			
-	</ul>
+    <section id="reviewer">
+    <h2>Reviewer Roles</h2>
+    <ul>
+      <li><strong>IEEE International Conference on Machine Learning and Application</strong><a href="https://www.icmla-conference.org/" target="_blank"> ICMLA</a></li>
+      <li><strong>Springer International Conference on Computational Collective Intelligence, (NLP Track)</strong><a href="https://iccci.pwr.edu.pl/" target="_blank"> ICCCI </a></li>
+      <li><strong>Florida Online Journal Flairs-38 (special track: semantic, logics, information extraction and ai)</strong><a href="https://journals.flvc.org/FLAIRS/index" target="_blank"> Flairs</a></li>
+      <li><strong>Program Committee - Florida Online Journal Flairs-36 (special track: semantic, logics, information extraction and ai)</strong><a href="https://journals.flvc.org/FLAIRS/article/download/133389/137469" target="_blank"> Flairs-36</a> </li>            
+    </ul>
     </section>
   </div>
 
